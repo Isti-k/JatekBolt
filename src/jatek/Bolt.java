@@ -4,6 +4,8 @@
  */
 package jatek;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author KovácsIstvánGábor(SZ
@@ -26,21 +28,216 @@ public class Bolt extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        jpPoszter = new javax.swing.JPanel();
+        lbKep = new javax.swing.JLabel();
+        jbTorles = new javax.swing.JButton();
+        jbVasarlas = new javax.swing.JButton();
+        jpDlc = new javax.swing.JPanel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jpFizetendo = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jpJatek = new javax.swing.JPanel();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jCheckBox2 = new javax.swing.JCheckBox();
+        jCheckBox3 = new javax.swing.JCheckBox();
+        jCheckBox4 = new javax.swing.JCheckBox();
+        jCheckBox5 = new javax.swing.JCheckBox();
+        jCheckBox6 = new javax.swing.JCheckBox();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jpPoszter.setBorder(javax.swing.BorderFactory.createTitledBorder("Poszter"));
+
+        lbKep.setIcon(new javax.swing.ImageIcon(getClass().getResource("/jatek/games-software-f1-2023-ps5-blu-ray-1161307.jpg"))); // NOI18N
+        lbKep.setText("jLabel3");
+
+        javax.swing.GroupLayout jpPoszterLayout = new javax.swing.GroupLayout(jpPoszter);
+        jpPoszter.setLayout(jpPoszterLayout);
+        jpPoszterLayout.setHorizontalGroup(
+            jpPoszterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jpPoszterLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lbKep, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jpPoszterLayout.setVerticalGroup(
+            jpPoszterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(lbKep, javax.swing.GroupLayout.PREFERRED_SIZE, 138, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
+        jbTorles.setText("Törlés");
+        jbTorles.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbTorlesActionPerformed(evt);
+            }
+        });
+
+        jbVasarlas.setText("Vásárlás");
+        jbVasarlas.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbVasarlasActionPerformed(evt);
+            }
+        });
+
+        jpDlc.setBorder(javax.swing.BorderFactory.createTitledBorder("dlc"));
+
+        buttonGroup1.add(jRadioButton1);
+        jRadioButton1.setText("Igen, szeretném");
+
+        buttonGroup1.add(jRadioButton2);
+        jRadioButton2.setText("Nem, nemkérem");
+
+        javax.swing.GroupLayout jpDlcLayout = new javax.swing.GroupLayout(jpDlc);
+        jpDlc.setLayout(jpDlcLayout);
+        jpDlcLayout.setHorizontalGroup(
+            jpDlcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpDlcLayout.createSequentialGroup()
+                .addGroup(jpDlcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jRadioButton1)
+                    .addComponent(jRadioButton2))
+                .addGap(0, 27, Short.MAX_VALUE))
+        );
+        jpDlcLayout.setVerticalGroup(
+            jpDlcLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpDlcLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jRadioButton1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jRadioButton2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jpFizetendo.setBorder(javax.swing.BorderFactory.createTitledBorder("Fizetendő"));
+
+        jLabel1.setText("0");
+
+        jLabel2.setText("Ft");
+
+        javax.swing.GroupLayout jpFizetendoLayout = new javax.swing.GroupLayout(jpFizetendo);
+        jpFizetendo.setLayout(jpFizetendoLayout);
+        jpFizetendoLayout.setHorizontalGroup(
+            jpFizetendoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFizetendoLayout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 6, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel2)
+                .addContainerGap(67, Short.MAX_VALUE))
+        );
+        jpFizetendoLayout.setVerticalGroup(
+            jpFizetendoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpFizetendoLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jpFizetendoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jLabel2))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jpJatek.setBorder(javax.swing.BorderFactory.createTitledBorder("Játék"));
+
+        jCheckBox1.setText("FarCry 6");
+
+        jCheckBox2.setText("RainbowSixSiege");
+
+        jCheckBox3.setText("CallofDuty MW3");
+
+        jCheckBox4.setText("AssassinCreed Mirage");
+
+        jCheckBox5.setText("Party Animals");
+
+        jCheckBox6.setText("Batlefield 5");
+
+        javax.swing.GroupLayout jpJatekLayout = new javax.swing.GroupLayout(jpJatek);
+        jpJatek.setLayout(jpJatekLayout);
+        jpJatekLayout.setHorizontalGroup(
+            jpJatekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpJatekLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jpJatekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jCheckBox1)
+                    .addComponent(jCheckBox2)
+                    .addComponent(jCheckBox3)
+                    .addComponent(jCheckBox4)
+                    .addComponent(jCheckBox5)
+                    .addComponent(jCheckBox6))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jpJatekLayout.setVerticalGroup(
+            jpJatekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpJatekLayout.createSequentialGroup()
+                .addComponent(jCheckBox1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCheckBox2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCheckBox3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCheckBox4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jCheckBox5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jCheckBox6)
+                .addContainerGap())
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(jpPoszter, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jpJatek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jbTorles)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jbVasarlas))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jpFizetendo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(0, 0, Short.MAX_VALUE))))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(7, 7, 7)
+                                .addComponent(jpDlc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jpPoszter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jpDlc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jpFizetendo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jbTorles)
+                            .addComponent(jbVasarlas)))
+                    .addComponent(jpJatek, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jbTorlesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbTorlesActionPerformed
+        JOptionPane.showMessageDialog(rootPane, "Sikeresen törölve!");
+        System.exit(0);
+    }//GEN-LAST:event_jbTorlesActionPerformed
+
+    private void jbVasarlasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbVasarlasActionPerformed
+        JOptionPane.showMessageDialog(rootPane, "Sikeres megrendelés!");
+    }//GEN-LAST:event_jbVasarlasActionPerformed
 
     /**
      * @param args the command line arguments
@@ -78,5 +275,23 @@ public class Bolt extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JCheckBox jCheckBox1;
+    private javax.swing.JCheckBox jCheckBox2;
+    private javax.swing.JCheckBox jCheckBox3;
+    private javax.swing.JCheckBox jCheckBox4;
+    private javax.swing.JCheckBox jCheckBox5;
+    private javax.swing.JCheckBox jCheckBox6;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JButton jbTorles;
+    private javax.swing.JButton jbVasarlas;
+    private javax.swing.JPanel jpDlc;
+    private javax.swing.JPanel jpFizetendo;
+    private javax.swing.JPanel jpJatek;
+    private javax.swing.JPanel jpPoszter;
+    private javax.swing.JLabel lbKep;
     // End of variables declaration//GEN-END:variables
 }
